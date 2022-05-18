@@ -11,7 +11,7 @@ import {
 import cx from "classnames";
 import styles from "./Week.module.scss";
 
-const Week = ({ currentDate, setCurrentDate }) => {
+const CalendarWeek = ({ currentDate, setCurrentDate }) => {
   
   const setDaysToWeek = (date) => {
     const week = [];
@@ -63,4 +63,4 @@ const Week = ({ currentDate, setCurrentDate }) => {
   return <div className={styles.weekContainer}>{getDays()}</div>;
 };
 
-export default Week;
+export default CalendarWeek;

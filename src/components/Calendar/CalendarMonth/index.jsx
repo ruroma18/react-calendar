@@ -7,12 +7,12 @@ import {
   addMonths,
   subMonths,
 } from "date-fns";
-import Week from "../Week";
+import CalendarWeek from "../CalendarWeek";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import styles from "./CalendarWeekMonth.module.scss";
+import styles from "./CalendarMonth.module.scss";
 
-const CalendarWeekMonth = ({ currentDate, setCurrentDate }) => {
+const CalendarMonth = ({ currentDate, setCurrentDate }) => {
   const getMonth = format(currentDate, "LLLL");
   const getYear = format(currentDate, "y");
   const weekArr = eachDayOfInterval({
@@ -50,9 +50,9 @@ const CalendarWeekMonth = ({ currentDate, setCurrentDate }) => {
         />
       </div>
       <div className={styles.weekNamesList}>{getWeek} </div>
-      <Week currentDate={currentDate} setCurrentDate={setCurrentDate} />
+      <CalendarWeek currentDate={currentDate} setCurrentDate={setCurrentDate} />
     </div>
   );
 };
 
-export default CalendarWeekMonth;
+export default CalendarMonth;
