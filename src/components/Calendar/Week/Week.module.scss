@@ -1,0 +1,33 @@
+.daysTable {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.days {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  color: #b7b7b7;
+}
+
+.currentDay {
+  color: rgb(251, 0, 0);
+}
+
+.selectedDay {
+  width: 24px;
+  height: 24px;
+  border: 2px solid red;
+  border-radius: 50%;
+}
+
+.nextMonthDay {
+  color: #b7b7b7;
+  opacity: 50%;
+}
+
+.weekContainer {
+  height: 170px;
+}

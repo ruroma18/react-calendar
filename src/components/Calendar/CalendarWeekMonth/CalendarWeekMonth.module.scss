@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  padding: 20px;
+}
+
+.monthYearContainer {
+  display: flex;
+  justify-content: center;
+  color: #009991;
+  font-size: 1.3em;
+  font-weight: 600;
+  padding: 10px 0 20px 0;
+}
+
+.monthYearText {
+  display: flex;
+  justify-content: center;
+  width: 200px
+}
+
+.monthText {
+  padding-right: 10px;
+  
+}
+
+.monthArrow {
+  margin: 0 auto;
+  font-size: medium;
+}
+
+.weekNamesList {
+  display: flex;
+  justify-content: space-evenly;
+  color: red;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.weekNamesListItem {
+  width: 26px;
+}
